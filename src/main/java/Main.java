@@ -6,10 +6,8 @@ import Product.Product;
 import UserWorkPackage.ActionUser;
 
 
-
 public class Main {
     public static void main(String[] args) {
-
 
 
         Product sourCream = new Product("Сметана", "Простоквашино", 150);
@@ -26,18 +24,11 @@ public class Main {
         warehouse.addProduct(bread, 10);
 
 
-
-
-
         ActionUser actionUser = new ActionUser();
         actionUser.startShop(Warehouse.getInstance(), new SimplePricer(new SimpleTax()));
 
 
     }
-
-
-
-
 
 
 }

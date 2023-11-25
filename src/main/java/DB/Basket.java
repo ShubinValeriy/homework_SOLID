@@ -40,7 +40,7 @@ public class Basket implements DB {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Ваша корзина";
     }
 }

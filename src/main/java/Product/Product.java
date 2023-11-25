@@ -31,8 +31,8 @@ public class Product {
         this.costPrice = costPrice;
     }
 
-    protected void checkPrice (double price){
-        if (price <= 0){
+    protected void checkPrice(double price) {
+        if (price <= 0) {
             throw new IllegalArgumentException("Цена не может быть меньше или равна нулю");
         }
     }
@@ -55,7 +55,7 @@ public class Product {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return String.format("%1$s \"%2$s\"", name, manufacturer);
     }
 

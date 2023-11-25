@@ -4,6 +4,7 @@ import DB.*;
 import DB.WORKER.WorkerDB;
 import Pricer.Pricer;
 import Product.Product;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -69,7 +70,7 @@ public class ActionUser {
                     actionB = false;
                 }
                 case 1 -> {
-                    actionIncreaseProduct(pricer,warehouse, basket);
+                    actionIncreaseProduct(pricer, warehouse, basket);
                 }
                 case 2 -> {
                     actionDecreaseProduct(pricer, basket, warehouse);
@@ -147,8 +148,8 @@ public class ActionUser {
         }
     }
 
-    private void actionOrdering(DB basket, Pricer pricer){
-        int orderNumber =(int) (Math.random() * 1000) ;
+    private void actionOrdering(DB basket, Pricer pricer) {
+        int orderNumber = (int) (Math.random() * 1000);
         System.out.println("Спасибо за заказ № " + orderNumber);
         List<Product> listProduct = basket.getListProduct();
         int i = 1;
